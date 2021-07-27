@@ -1,0 +1,19 @@
+{{ define "main" }}
+<h1 class="mx-auto text-center max-w-screen-lg font-bold title-font
+	   text-white text-4xl md:text-5xl mb-4">{{ .Title }}</h1>
+<div class="container px-2 py-6 mx-auto flex-1 max-w-screen-sm prose">
+  <div class="text-center italic mb-4">{{ .Summary }}</div>
+  <div class="text-center">
+    <i class="fas fa-calendar-alt fa-fw"></i>
+    {{ .Date.Format ( "Jan 2, 2006") }}
+  </div>
+
+  {{ if and (gt .WordCount 400 ) (.Params.toc) }}
+  <aside>
+    {{.TableOfContents}}
+  </aside>
+  {{ end }}
+
+  {{ .Content }}
+</div>
+{{ end }}

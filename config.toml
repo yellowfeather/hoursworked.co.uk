@@ -1,12 +1,10 @@
+theme = "hoursworked"
 baseURL = "https://hoursworked.co.uk"
+title = "Hours Worked"
+languageCode = "en-gb"
 
-disableKinds = ["page", "section", "taxonomy", "term"]
-
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.75.0"
+[Params]
+    author = "Chris Richards"
 
 [build]
-# Used by PurgeCSS
-writeStats = true
+  writeStats = true

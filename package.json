@@ -13,6 +13,6 @@
 		"postcss-purgecss": "^2.0.3",
 		"tailwindcss": "^2.0.1"
 	},
-	"name": "hugo-starter-tailwind-basic",
+	"name": "hoursworked.co.uk",
 	"version": "0.1.0"
 }
