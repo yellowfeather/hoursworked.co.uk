@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>
-    {{ .Title }}
+    {{ block "title" . }}
+    {{- .Title }} - {{ .Site.Title -}}
+    {{ end }}
   </title>
   <meta name="description" content="{{ .Description }}">
   {{/* styles */}}
